@@ -2,8 +2,14 @@
 #include<iomanip>
 using std::cout;
 
+//intially 3 cannibals and 3 missionaries were assumed to be on one side.
 
-int intial_mis = 3, intial_cani = 3, I;
+/*here the issue is the cannibals and missionaries on the same side should be equal in number or missionaries 
+more in number.
+iF the cannibals count is more, they'll eat the missionaries.
+The goal is to  make the 6 members cross the river in a boat of capacity 2 , alive to the other side.
+*/
+int intial_mis = 3, intial_cani = 3, i;
 int  final_mis = 0, final_cani = 0;
 int  position = 0, pts = 0, pick = 0;
 
@@ -29,7 +35,7 @@ int safe()
 {
     return (final_cani == 3 && final_mis == 3) ? 0 : 1;
 }
-
+//solution is printed to the console
 void ans()
 {
     while (safe())
