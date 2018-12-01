@@ -1,7 +1,7 @@
 #include<iostream>
 #include<iomanip>
 using std::cout;
-
+//just line 4
 //intially 3 cannibals and 3 missionaries were assumed to be on one side.
 
 /*here the issue is the cannibals and missionaries on the same side should be equal in number or missionaries 
